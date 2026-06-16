@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Meta básico -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dona Euzébia Plantas | Transforme seu espaço com mais verde</title>
+  <meta name="description" content="Mais de 180 variedades de plantas ornamentais, frutíferas, palmeiras e árvores nativas. Solicite seu orçamento pelo WhatsApp." />
+
+  <!-- Fonte Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Ícones (Lucide) -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <!-- Estilos do site -->
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="site-header">
+    <!-- Barra superior roxa -->
+    <div class="topbar">
+      <div class="topbar-inner container">
+        <div class="topbar-links">
+          <a href="#/catalogo" data-route="/catalogo">Nossas plantas</a>
+          <a href="#/contato" data-route="/contato">Fale conosco</a>
+          <a href="#/contato" data-route="/contato">Faça seu orçamento</a>
+        </div>
+        <div class="topbar-tagline">
+          <i data-lucide="leaf" class="icon-leaf-soft"></i>
+          <span>Produzindo e distribuindo verde pelo Brasil</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linha principal: logo + busca + ações -->
+    <div class="header-main container">
+      <a href="#/" data-route="/" class="brand">
+        <span class="brand-mark"><img src="./icone.png" alt="Logo" style="width: 100%; height: 100%; object-fit: contain;"></span>
+        <span class="brand-text">
+          <span class="brand-name">Dona Euzébia</span>
+          <span class="brand-sub">PLANTAS</span>
+        </span>
+      </a>
+
+      <!-- Busca desktop -->
+      <form class="search search--desktop" data-search>
+        <i data-lucide="search" class="search-icon"></i>
+        <input type="text" name="q" placeholder="O que você procura?" />
+        <button type="submit" class="btn-search">Buscar</button>
+      </form>
+
+      <div class="header-actions">
+        <a href="#/contato" data-route="/contato" class="btn-outline-green">Faça seu orçamento</a>
+        <button type="button" class="btn-icon-cart" data-open-cart aria-label="Abrir carrinho de orçamento">
+          <i data-lucide="shopping-bag"></i>
+          <span class="cart-badge" data-cart-count hidden>0</span>
+        </button>
+        <button type="button" class="btn-icon-menu" data-toggle-menu aria-label="Abrir menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Busca mobile -->
+    <div class="search-mobile-wrap container">
+      <form class="search search--mobile" data-search>
+        <i data-lucide="search" class="search-icon"></i>
+        <input type="text" name="q" placeholder="O que você procura?" />
+        <button type="submit" class="btn-search btn-search--sm">Ir</button>
+      </form>
+    </div>
+
+    <!-- Navegação principal -->
+    <nav class="main-nav">
+      <div class="main-nav-inner container">
+        <a href="#/" data-route="/">Início</a>
+        <a href="#/catalogo" data-route="/catalogo">Catálogo</a>
+        <a href="#/sobre" data-route="/sobre">Sobre Nós</a>
+        <a href="#/contato" data-route="/contato">Contato</a>
+      </div>
+
+      <!-- Menu mobile -->
+      <div class="mobile-menu" data-mobile-menu hidden>
+        <a href="#/" data-route="/">Início</a>
+        <a href="#/catalogo" data-route="/catalogo">Catálogo</a>
+        <a href="#/sobre" data-route="/sobre">Sobre Nós</a>
+        <a href="#/contato" data-route="/contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== CONTEÚDO PRINCIPAL (páginas dinâmicas) ===================== -->
+  <main id="app-main">
+    <!-- Renderizado por site.js conforme a rota -->
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">
+          <span class="brand-mark"><img src="./icone.png" alt="Logo" style="width: 100%; height: 100%; object-fit: contain;"></span>
+          <span class="brand-text">
+            <span class="brand-name brand-name--light">Dona Euzébia</span>
+            <span class="brand-sub brand-sub--light">PLANTAS</span>
+          </span>
+        </div>
+        <p class="footer-text">
+          Há mais de duas décadas produzindo e distribuindo verde pelo Brasil.
+          Plantas selecionadas, atendimento especializado e soluções para paisagismo.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Categorias</h4>
+        <ul class="footer-list" data-footer-categories></ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Institucional</h4>
+        <ul class="footer-list">
+          <li><a href="#/" data-route="/">Início</a></li>
+          <li><a href="#/catalogo" data-route="/catalogo">Catálogo</a></li>
+          <li><a href="#/sobre" data-route="/sobre">Sobre Nós</a></li>
+          <li><a href="#/contato" data-route="/contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Contato</h4>
+        <ul class="footer-list footer-contact">
+          <li><i data-lucide="phone"></i><span>(32) 99918-3344</span></li>
+          <li><i data-lucide="mail"></i><span>contato@donaeuzebiaplantas.com.br</span></li>
+          <li><i data-lucide="map-pin"></i><span>Atendimento em todo o Brasil</span></li>
+        </ul>
+        <a href="https://wa.me/5532999183344" target="_blank" rel="noopener noreferrer" class="btn-whatsapp btn-whatsapp--sm">
+          <i data-lucide="message-circle"></i> Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© <span data-current-year></span> Dona Euzébia Plantas. Todos os direitos reservados.</span>
+        <span>Produzindo e distribuindo verde pelo Brasil.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTÃO FLUTUANTE WHATSAPP ===================== -->
+  <a href="https://wa.me/5532999183344" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Falar no WhatsApp">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+  <!-- ===================== DRAWER DO CARRINHO ===================== -->
+  <div class="drawer-backdrop" data-drawer-backdrop hidden></div>
+  <aside class="cart-drawer" data-cart-drawer hidden aria-hidden="true">
+    <div class="cart-header">
+      <h3>
+        <i data-lucide="shopping-bag"></i>
+        Carrinho de orçamento
+        <span class="cart-pill" data-cart-pill hidden></span>
+      </h3>
+      <button type="button" class="btn-icon-close" data-close-cart aria-label="Fechar"><i data-lucide="x"></i></button>
+    </div>
+    <div class="cart-body" data-cart-body></div>
+    <div class="cart-footer">
+      <button type="button" class="cart-clear" data-clear-cart hidden>Limpar carrinho</button>
+      <a class="btn-pathfinder" data-cart-wa href="#" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="message-circle"></i>
+        Solicitar orçamento pelo WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- ===================== TOAST ===================== -->
+  <div class="toast-stack" data-toast-stack aria-live="polite"></div>
+
+  <!-- Script principal -->
+  <script src="site.js" defer></script>
+</body>
+</html>
