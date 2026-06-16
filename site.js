@@ -930,16 +930,6 @@
       });
     });
 
-    // Menu mobile
-    const btnMenu = document.querySelector("[data-toggle-menu]");
-    const menu = document.querySelector("[data-mobile-menu]");
-    btnMenu.addEventListener("click", () => {
-      menu.hidden = !menu.hidden;
-    });
-    menu.querySelectorAll("a").forEach((a) => {
-      a.addEventListener("click", () => { menu.hidden = true; });
-    });
-
     // Categorias do rodapé
     const listaFooter = document.querySelector("[data-footer-categories]");
     CATEGORIAS.forEach((c) => {
